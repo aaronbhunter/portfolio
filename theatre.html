@@ -15,7 +15,7 @@
         <a href="index.html">Home</a>
         <a href="resume.html">Résumé</a>
         <a href="theatre.html" aria-current="page">Theatre</a>
-        <a href="honorsArcana.html" target="_blank">Honors Arcana</a>
+        <a href="creations.html">Creations</a>
         <a href="https://www.linkedin.com/in/Aaron-B-Hunter" target="_blank" rel="noopener">LinkedIn</a>
       </nav>
     </div>
@@ -90,9 +90,14 @@
       </div>
     </section>
 
-    <footer class="footer">
-      You can delete this page entirely if you decide not to include theatre credits on the public site.
+     <footer class="footer">
+      © <span id="year"></span> Aaron Hunter • Built with HTML/CSS
     </footer>
   </main>
+
+  <script>
+    // Tiny helper: keeps the footer year current.
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
