@@ -622,7 +622,7 @@ uiBest.textContent = bestByClass.frost; // temporary until updateUI runs
       moveSpd: 166,
       basicCd: 0.28,
       abilityCd: 4.3,
-      boltDmg: 4,
+      boltDmg: 5,             // 1.2.1 increased damage by 1
       boltBonusVsFrozen: 13,
 
         // Freeze cone stuff
@@ -675,22 +675,22 @@ uiBest.textContent = bestByClass.frost; // temporary until updateUI runs
       basicCd: 0.32,
       abilityCd: 7.0,
         // Basic attack cone stuff
-      coneRange: 64,
-      coneWidthDeg: 63,
-      coneDmg: 10,
+      coneRange: 75,
+      coneWidthDeg: 50, // since I increased the range I decreased the width 
+      coneDmg: 3,       // 1.2.1 greatly reduced damage and increased hitstun and range
       basicKnock: 10,
-      basicStun: 0.06,
+      basicStun: 0.078,
         // NEW: basic attack reduces fireball cooldown
-      cdRefundPerHit: 0.35,   // seconds shaved by 1 hit
-      cdRefundCap: 1.60,      // max seconds shaved per basic
-      cdRefundExpo: 0.77,     // additional hits. 0.5=sqrt --> 1=linear
+      cdRefundPerHit: 0.33,   // seconds shaved by 1 hit
+      cdRefundCap: 3.0,       // max seconds shaved per basic
+      cdRefundExpo: 0.65,     // additional hits. 0.5=sqrt --> 1=linear
 
         // Fireball ability stuff 
       fireballSpeed: 280,
       fireballRadius: 15,
       fireballPierce: 1,
-      fireballDmg: 29,
-      fireballSplash: 60
+      fireballDmg: 30,
+      fireballSplash: 60 // I believe this is the splash radius not the damage
     }
   };
 
